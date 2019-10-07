@@ -204,9 +204,23 @@ for (i = 0; i < arr3.length; i++) {
 console.log(arrOddIndex + ' нечетных элементов в массиве');
 
 //8
-let arr = [1, 2, 3, 4] ;
+let arr4 = [1, 2, 3, 4];
+let arrCenter = arr4.length / 2;
+let arrPartFirst = [];
+let arrPartSecond = [];
+
+for (i = 0; i < arr4.length; i++) {
+    if (arrCenter <= i) {
+        arrPartFirst[i - arrCenter] = arr4[i];
+    } else {
+        arrPartSecond[i] = arr4[i];
+    }
+}
+console.log(arrPartFirst.concat(arrPartSecond));
 
 //9
+
+
 //10
 
 //Функции
