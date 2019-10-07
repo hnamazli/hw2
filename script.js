@@ -83,6 +83,20 @@ for (i = 1; i < 100; i++) {
 console.log(c);
 
 //2
+let pNum = 4;
+
+for(i = 2; i <= pNum; i++) {
+    if (pNum === 2) {
+        console.log('Простое число');
+        break;
+    }
+    if(pNum % i === 0) {
+        console.log('Не простое число');
+    } else {
+        console.log('Простое число');
+    } break;
+}
+
 //3
 //4
 let fac = 5;
@@ -94,16 +108,14 @@ for (i = 1; i <= fac; i++) {
 console.log(n);
 
 //5 
-let numSum = 576;
-let tmp = 0;
+let numVar = 576;
+let strNum = numVar.toString();
+let numSum = 0;
 
-while (numSum > 0) {
-    tmp += numSum % 10;
-    numSum = numSum / 10;
-    console.log(tmp);
+for (i = 0; i < strNum.length; i++) {
+    numSum += parseInt(strNum[i]);
 }
-console.log(tmp);
-
+console.log(numSum);
 
 
 //6
