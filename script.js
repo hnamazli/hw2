@@ -316,6 +316,3 @@ function week(day) {
 }
 
 //2
-function name(params) {
-    
-}
