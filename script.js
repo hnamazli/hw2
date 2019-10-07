@@ -219,7 +219,7 @@ for (i = 0; i < arr4.length; i++) {
 console.log(arrPartFirst.concat(arrPartSecond));
 
 //9
-
+let arr5 = [5, 3, 8, 1];
 
 //10
 
