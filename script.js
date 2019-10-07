@@ -113,10 +113,9 @@ let strNum = numVar.toString();
 let numSum = 0;
 
 for (i = 0; i < strNum.length; i++) {
-    numSum += parseInt(strNum[i]);
+    numSum += Number(strNum[i]);
 }
 console.log(numSum);
-
 
 //6
 let z = 123;
@@ -132,12 +131,78 @@ console.log(r);
 //Одномерные массивы
 
 //1
+let minNum = [5, 15, 40, 80, 17, 3];
+
+for (i = 0; i < minNum.length; i++) {
+    if(minNum[i] < minNum[0]){
+        minNum[0] = minNum[i];
+    }
+}
+console.log(minNum[0]);
+
 //2
+let maxNum = [5, 7, 40, 80, 17, 3];
+
+for (i = 0; i < maxNum.length; i++) {
+    if(maxNum[i] > maxNum[0]){
+        maxNum[0] = maxNum[i];
+    }
+}
+console.log(maxNum[0]);
+
 //3
+let minIndex = [5, 15, 40, 80, 17, 3];
+let findMinIndex = 0;
+
+for (i = 0; i < minIndex.length; i++) {
+    if(minIndex[i] < minIndex[0]){
+        findMinIndex = i;
+    }
+}
+console.log(findMinIndex);
+
 //4
+let maxIndex = [5, 15, 40, 80, 17, 3];
+let findMaxIndex = 0;
+
+for (i = 0; i < maxIndex.length; i++) {
+    if(maxIndex[i] > maxIndex[0]){
+        findMaxIndex = i - 1;
+    }
+}
+console.log(findMaxIndex);
+
 //5
+let arr1 = [5, 15, 40, 80, 17, 3];
+let arrOddSum = 0;
+
+for (i = 0; i < arr1.length; i++) {
+    if (arr1[i] % 2) {
+        arrOddSum = arrOddSum + arr1[i];
+    }
+}
+console.log(arrOddSum);
+
 //6
+let arr2 = [5, 15, 40, 80, 17, 3];
+let arrRev = [];
+
+for (i = 0; i < arr2.length; i++) {
+    arrRev[i] = arr2[(arr2.length - i) - 1];
+}
+console.log(arrRev);
+
 //7
+let arr3 = [5, 15, 40, 80, 17, 3];
+let arrOddIndex = 0;
+
+for (i = 0; i < arr3.length; i++) {
+    if (arr3[i] % 2) {
+        ++arrOddIndex;
+    }
+}
+console.log(arrOddIndex + ' нечетных элементов в массиве');
+
 //8
 let arr = [1, 2, 3, 4] ;
 
