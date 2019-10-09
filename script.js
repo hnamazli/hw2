@@ -219,9 +219,68 @@ for (i = 0; i < arr4.length; i++) {
 console.log(arrPartFirst.concat(arrPartSecond));
 
 //9
+//Sort Bubble
+let arr5 = [5, 3, 8, 1];
+let endI = arr5.length - 1;
+let swap = [];
 
+for (i = 0; i < endI; i++) {
+    for (j = 0, endJ = endI - i; j < endJ; j++) {
+        if (arr5[j] > arr5[j + 1]) {
+            swap = arr5[j];
+            arr5[j] = arr5[j + 1];
+            arr5[j + 1] = swap;
+        }
+    }
+}
+console.log(arr5);
+
+//Sort Select
+let arr6 = [5, 3, 8, 1, 7, 10];
+let l = arr6.length - 1;
+
+for (i = 0; i < l; i++) {
+    let indexMin = i;
+    for (j = i + 1; j < l; j++) {
+        if (arr6[indexMin] > arr6[j]) {
+            indexMin = j;
+        }
+    }
+    if (indexMin !== i) {
+        [arr6[i], arr6[indexMin]] = [arr6[indexMin], arr6[i]];
+    }
+}
+console.log(arr6);
+
+//Sort Insert
+let arr7 = [9, 3, 8, 2, 7, 6];
+
+for (i = 1; i < arr7.length; i++) {
+    let current = arr7[i];
+    let j = i;
+    while (j > 0 && arr7[j - 1] > current) {
+        arr7[j] = arr7[j - 1];
+        j--;
+    }
+    arr7[j] = current;
+}
+console.log(arr7);
 
 //10
+let arr8 = ['Quick', 'Merge', 'Shell', 'Heap'];
+let endStr = arr5.length - 1;
+let swapStr = [];
+
+for (i = 0; i < endStr; i++) {
+    for (j = 0, endJ = endStr - i; j < endJ; j++) {
+        if (arr8[j] > arr8[j + 1]) {
+            swapStr = arr8[j];
+            arr8[j] = arr8[j + 1];
+            arr8[j + 1] = swapStr;
+        }
+    }
+}
+console.log(arr8);
 
 //Функции
 
@@ -257,6 +316,3 @@ function week(day) {
 }
 
 //2
-function name(params) {
-    
-}
