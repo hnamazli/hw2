@@ -43,9 +43,9 @@ let num3 = 8;
 let max = 0;
 
 if (num1 + num2 + num3 > num1 * num2 * num3) {
-    max = num1 + num2 + num3+ 3;  
+    max = num1 + num2 + num3 + 3;  
 } else {
-    max = num1 * num2 * num3+ 3;
+    max = num1 * num2 * num3 + 3;
 }
 
 console.log(max);
